@@ -1,6 +1,7 @@
 package org.example;
 
 import okhttp3.*;
+import org.json.JSONArray;
 import org.json.JSONObject;
 
 import java.io.*;
@@ -29,7 +30,7 @@ public class TranscriptFilesGenerator {
                 String path = "src/videos";
                 for(int i = 1;i <= getFilesCount();i++){
                     System.out.println(ANSI_GREEN+"FILE NUMBER : "+i+ANSI_YELLOW);
-                    byte[] data = readMp4(path+"/"+i+".mp4");
+                    byte[] data = readMp4(path+"/"+i+".m4a");
                     System.out.println(data);
                     String audio_url = POST_Upload(data);
                     System.out.println(audio_url);
@@ -47,6 +48,7 @@ public class TranscriptFilesGenerator {
                         System.out.println(ANSI_GREEN+"TRANSCRIPTION STATUS : "
                                 +transcriptResponseJson.getString("status")+ANSI_YELLOW);
                         if (transcriptResponseJson.getString("status").equals("completed")){
+                            JSONArray words = new JSONArray(transcriptResponseJson.getJSONArray("words"));
                             String text = GET_Transcript_srt(id);
                             File file = new File("src/transcripts_english/"+i+".srt");
                             try{
@@ -57,7 +59,15 @@ public class TranscriptFilesGenerator {
 
                                 bufferedOutputStream.write(text.getBytes());
                                 bufferedOutputStream.flush();
-
+                                for(int word_i = 0;word_i< words.length();word_i++){
+                                    JSONObject word = words.getJSONObject(word_i);
+                                    if(word.getDouble("confidence") < 0.7){
+                                        bufferedOutputStream.write((word.getString("text")+"--" +
+                                                word.getInt("start")/1000.0+"\n")
+                                                .getBytes());
+                                    }
+                                }
+                                bufferedOutputStream.flush();
                             }catch (FileNotFoundException fileNotFoundException){
                                 System.out.println("ERROR WHILE OPENING  TEXT FILE NOT FOUND "
                                         +fileNotFoundException+" "+file.getPath()
