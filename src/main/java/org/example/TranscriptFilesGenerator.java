@@ -47,15 +47,15 @@ public class TranscriptFilesGenerator {
                         System.out.println(ANSI_GREEN+"TRANSCRIPTION STATUS : "
                                 +transcriptResponseJson.getString("status")+ANSI_YELLOW);
                         if (transcriptResponseJson.getString("status").equals("completed")){
-                            File file = new File("src/transcripts_english/"+i+".txt");
+                            String text = GET_Transcript_srt(id);
+                            File file = new File("src/transcripts_english/"+i+".srt");
                             try{
                                 FileOutputStream fileOutputStream = new FileOutputStream(file);
 
                                 BufferedOutputStream bufferedOutputStream =
                                         new BufferedOutputStream(fileOutputStream);
 
-                                bufferedOutputStream.write(transcriptResponseJson
-                                        .getString("text").replace(".","\n").getBytes());
+                                bufferedOutputStream.write(text.getBytes());
                                 bufferedOutputStream.flush();
 
                             }catch (FileNotFoundException fileNotFoundException){
@@ -129,8 +129,9 @@ public class TranscriptFilesGenerator {
     //returns uploaded video transcript id
     public String POST_Transcript(String audioUrl){
         MediaType mediaType = MediaType.parse("application/json; charset=utf-8");
-        String jsonData = "{\"audio_url\": \""+audioUrl+"\"}";
-        RequestBody formBody = RequestBody.create(jsonData, mediaType);
+        JSONObject requestBodyJson = new JSONObject();
+        requestBodyJson.put("audio_url", audioUrl);
+        RequestBody formBody = RequestBody.create(requestBodyJson.toString(), mediaType);
         Request  request = new Request.Builder()
                 .url(getBaseUrl()+"/transcript")
                 .addHeader("authorization","Bearer "+getToken())
@@ -150,6 +151,22 @@ public class TranscriptFilesGenerator {
     public String GET_Transcript(String id){
         Request  request = new Request.Builder()
                 .url(getBaseUrl()+"/transcript/"+id)
+                .addHeader("authorization","Bearer "+getToken())
+                .addHeader("Content-Type","application/json")
+                .get()
+                .build();
+        try {
+            Response response = getClient().newCall(request).execute();
+            return response.body().string();
+        }catch (IOException ioException){
+            System.out.println("ERROR IN REQUESTING : "+request.url()+ioException
+                    +" "+Thread.currentThread().getName());
+        }
+        return "ERROR";
+    }
+    public String GET_Transcript_srt(String id){
+        Request  request = new Request.Builder()
+                .url(getBaseUrl()+"/transcript/"+id+"/srt")
                 .addHeader("authorization","Bearer "+getToken())
                 .addHeader("Content-Type","application/json")
                 .get()
