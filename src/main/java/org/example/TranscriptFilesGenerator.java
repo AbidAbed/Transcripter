@@ -30,7 +30,7 @@ public class TranscriptFilesGenerator {
                 String path = "src/videos";
                 for(int i = 1;i <= getFilesCount();i++){
                     System.out.println(ANSI_GREEN+"FILE NUMBER : "+i+ANSI_YELLOW);
-                    byte[] data = readMp4(path+"/"+i+".m4a");
+                    byte[] data = readMp4(path+"/"+i+".mp4");
                     System.out.println(data);
                     String audio_url = POST_Upload(data);
                     System.out.println(audio_url);
@@ -63,7 +63,8 @@ public class TranscriptFilesGenerator {
                                     JSONObject word = words.getJSONObject(word_i);
                                     if(word.getDouble("confidence") < 0.7){
                                         bufferedOutputStream.write((word.getString("text")+"--" +
-                                                word.getInt("start")/1000.0+"\n")
+                                                " time :+"+word.getInt("start")/1000.0+"\n"+
+                                                "conf : "+ word.getDouble("confidence")+"\n")
                                                 .getBytes());
                                     }
                                 }
