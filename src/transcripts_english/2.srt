@@ -1,0 +1,142 @@
+1
+00:00:00,170 --> 00:00:03,614
+Welcome to Englobe's Media Channels. In this video, we will
+
+2
+00:00:03,652 --> 00:00:07,370
+explore the meaning of the English word unite.
+
+3
+00:00:07,530 --> 00:00:10,874
+Unite means to come or bring together for a common purpose
+
+4
+00:00:10,922 --> 00:00:14,426
+or action. Example the two companies decided
+
+5
+00:00:14,458 --> 00:00:18,506
+to unite their resources and expertise to develop a new product that neither
+
+6
+00:00:18,538 --> 00:00:21,994
+could have accomplished alone. In the next clip,
+
+7
+00:00:22,042 --> 00:00:25,040
+we will see two people unite to fight a large group.
+
+8
+00:00:25,370 --> 00:00:26,120
+Um,
+
+9
+00:00:28,490 --> 00:00:31,480
+I tell you, we ain't gonna want to be here when this thing goes off.
+
+10
+00:00:33,370 --> 00:00:36,886
+Slushy's 400 yards through the slide. They hold her in
+
+11
+00:00:36,908 --> 00:00:40,214
+some sort of medical timer set for 45 minutes. We get in and get
+
+12
+00:00:40,252 --> 00:00:43,590
+out. Blow this death. Fight for the pieces. Remember the hallway.
+
+13
+00:00:43,670 --> 00:00:46,938
+No guns. Right. Those guys have to be alive, because at the
+
+14
+00:00:46,944 --> 00:00:49,954
+end of the hallway, the retinal scanner needs a match to open the door.
+
+15
+00:00:50,102 --> 00:00:53,614
+Pick a door. All right, then. No, that's my door. It's better
+
+16
+00:00:53,652 --> 00:00:54,480
+with you.
+
+17
+00:00:59,810 --> 00:01:04,122
+I made a mistake. This is your door. Oh, no. No backseat.
+
+18
+00:01:04,266 --> 00:01:07,246
+What's the matter? You got a lot of bad guys behind that door? What's this?
+
+19
+00:01:07,348 --> 00:01:08,720
+You want to learn something?
+
+20
+00:02:43,330 --> 00:02:47,120
+Corresponding match. Access. Did I
+
+21
+00:02:47,810 --> 00:02:52,814
+access? Deny access
+
+22
+00:02:52,932 --> 00:02:53,100
+did.
+
+Englobe's-- time :+0
+conf : 0.46139
+Unite-- time :+7
+conf : 0.68861
+to-- time :+14
+conf : 0.66
+resources-- time :+15
+conf : 0.65982
+could-- time :+18
+conf : 0.50381
+have-- time :+18
+conf : 0.66533
+In-- time :+20
+conf : 0.6188
+people-- time :+22
+conf : 0.68595
+to-- time :+23
+conf : 0.69
+large-- time :+24
+conf : 0.62609
+Um,-- time :+25
+conf : 0.54889
+Slushy's-- time :+33
+conf : 0.16756
+the-- time :+35
+conf : 0.64
+slide.-- time :+35
+conf : 0.42571
+They-- time :+36
+conf : 0.51
+Blow-- time :+40
+conf : 0.53483
+for-- time :+41
+conf : 0.60876
+guys-- time :+45
+conf : 0.62609
+have-- time :+45
+conf : 0.57369
+It's-- time :+53
+conf : 0.59687
+No-- time :+62
+conf : 0.535
+backseat.-- time :+63
+conf : 0.39273
+You-- time :+67
+conf : 0.56397
+match.-- time :+164
+conf : 0.34156
+Did-- time :+166
+conf : 0.57453
+Deny-- time :+168
+conf : 0.22798
+did.-- time :+172
+conf : 0.52133

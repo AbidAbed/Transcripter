@@ -1,0 +1,146 @@
+1
+00:00:00,170 --> 00:00:04,206
+Welcome to englobes Media Channels. In this video, we will explore the
+
+2
+00:00:04,228 --> 00:00:07,390
+meaning of the English phrase blow up.
+
+3
+00:00:07,540 --> 00:00:11,066
+Blow up means to explode or to cause something to explode,
+
+4
+00:00:11,178 --> 00:00:15,374
+often resulting in destruction or damage. Example the
+
+5
+00:00:15,412 --> 00:00:18,270
+terrorists planned to blow up the building with a bomb.
+
+6
+00:00:18,610 --> 00:00:22,480
+In the next clip, we will see an angry bird who used to blow up.
+
+7
+00:00:23,010 --> 00:00:26,374
+Now, bomb started with us two weeks ago.
+
+8
+00:00:26,492 --> 00:00:28,790
+Tell us your story, Bomb.
+
+9
+00:00:29,450 --> 00:00:32,690
+Okay, well, sometimes when I get upset,
+
+10
+00:00:32,770 --> 00:00:36,754
+I have been known to blow
+
+11
+00:00:36,802 --> 00:00:40,218
+up. So like what? Like you get mad, you mean?
+
+12
+00:00:40,304 --> 00:00:44,566
+Well, no, I literally blow up, okay? I explode
+
+13
+00:00:44,758 --> 00:00:46,010
+like a bomb.
+
+14
+00:00:50,450 --> 00:00:56,190
+Hence the name survive.
+
+15
+00:01:00,930 --> 00:01:03,230
+Excuse me? Party foul.
+
+16
+00:01:06,610 --> 00:01:10,190
+Do it. No can do. I just went boom boom before class.
+
+17
+00:01:10,260 --> 00:01:12,606
+Hey, look, I don't want to be here at all, but this could maybe make
+
+18
+00:01:12,628 --> 00:01:15,538
+it a little more interesting to me. So please? It explode.
+
+19
+00:01:15,634 --> 00:01:19,350
+You can't do it, can you? Yes, I can. But I'm having back
+
+20
+00:01:19,420 --> 00:01:22,680
+issues today, so I'm going to have to take a rain check.
+
+21
+00:01:23,130 --> 00:01:26,722
+Do it. Not the timer. Place the amigo. These guys are all nuts.
+
+22
+00:01:26,786 --> 00:01:27,640
+Big man.
+
+23
+00:01:30,250 --> 00:01:35,766
+Are we speaking telepathically or you're just good
+
+24
+00:01:35,788 --> 00:01:35,860
+talk.
+
+englobes-- time :+0
+conf : 0.4363
+resulting-- time :+11
+conf : 0.66533
+bomb.-- time :+17
+conf : 0.6187
+we-- time :+19
+conf : 0.65486
+bomb-- time :+23
+conf : 0.58803
+blow-- time :+36
+conf : 0.6893
+like-- time :+38
+conf : 0.50777
+what?-- time :+38
+conf : 0.52722
+no,-- time :+40
+conf : 0.68244
+literally-- time :+41
+conf : 0.69583
+I-- time :+43
+conf : 0.6
+a-- time :+45
+conf : 0.5
+bomb.-- time :+45
+conf : 0.45817
+Hence-- time :+50
+conf : 0.39726
+survive.-- time :+55
+conf : 0.12016
+boom-- time :+69
+conf : 0.69886
+please?-- time :+74
+conf : 0.51175
+It-- time :+74
+conf : 0.55091
+explode.-- time :+74
+conf : 0.53867
+back-- time :+78
+conf : 0.67564
+I'm-- time :+80
+conf : 0.28764
+Do-- time :+83
+conf : 0.57229
+timer.-- time :+84
+conf : 0.30678
+the-- time :+85
+conf : 0.58
+talk.-- time :+95
+conf : 0.56839
