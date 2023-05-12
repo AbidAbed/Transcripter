@@ -28,9 +28,9 @@ public class TranscriptFilesGenerator {
             @Override
             public void run() {
                 String path = "src/videos";
-                for(int i = 1;i <= getFilesCount();i++){
+                for(int i = 1;i <= 5;i++){
                     System.out.println(ANSI_GREEN+"FILE NUMBER : "+i+ANSI_YELLOW);
-                    byte[] data = readMp4(path+"/"+i+".mp4");
+                    byte[] data = readMp4(path+"/"+i+".m4a");
                     System.out.println(data);
                     String audio_url = POST_Upload(data);
                     System.out.println(audio_url);
@@ -51,7 +51,16 @@ public class TranscriptFilesGenerator {
                             JSONArray words = new JSONArray(transcriptResponseJson.getJSONArray("words"));
                             String text = GET_Transcript_srt(id);
                             File file = new File("src/transcripts_english/"+i+".srt");
+                            File manul = new File("src/manual/"+i+".txt");
+
                             try{
+                                FileOutputStream manulFile=
+                                        new FileOutputStream(manul);
+                                BufferedOutputStream manulFileStream =
+                                        new BufferedOutputStream(manulFile);
+                                manulFileStream.write(transcriptResponseJson
+                                        .getString("text").getBytes());
+                                manulFileStream.flush();
                                 FileOutputStream fileOutputStream = new FileOutputStream(file);
 
                                 BufferedOutputStream bufferedOutputStream =
